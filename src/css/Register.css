@@ -1,5 +1,5 @@
 .signUpScreen {
-  width: 400px;
+  width: 368px;
   padding: 70px;
   margin-left: auto;
   margin-right: auto;
@@ -55,8 +55,11 @@ h4 {
   }
 
   .signUpScreen > form > button {
-    padding: 8px 10px;
-    font-size: 0.5rem;
+    padding: 16px 10px;
+    font-size: 0.7rem;
     cursor: pointer;
+  }
+  .error {
+    font-size: 0.6rem;
   }
 }

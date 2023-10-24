@@ -164,3 +164,8 @@
   flex-direction: column;
   gap: 10px;
 }
+@media screen and (max-width: 790px) {
+  .portal {
+    width: 100vw;
+  }
+}

@@ -29,7 +29,10 @@ function Login({ togglePage }) {
     e.preventDefault();
     if (!formData.email || !formData.password) {
       setError("All fields must be filled");
-    } else if (!formData.email.includes("@")) {
+    } else if (
+      !formData.email.includes("@") ||
+      !formData.email.includes("gmail.com")
+    ) {
       setError("Enter valid email");
     } else {
       setError("");

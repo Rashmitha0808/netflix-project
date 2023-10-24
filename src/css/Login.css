@@ -1,11 +1,3 @@
-.signUpScreen {
-  max-width: 300px;
-  padding: 70px;
-  margin-left: auto;
-  margin-right: auto;
-  background: rgba(0, 0, 0, 0.85);
-}
-
 .signUpScreen > form {
   display: flex;
   flex-direction: column;
