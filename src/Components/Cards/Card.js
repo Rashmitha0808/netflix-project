@@ -84,9 +84,6 @@ function Card({
             <div>
               <FaPlayCircle onClick={handlePlayVideo} className="card_icon" />
 
-              {/* <span>
-                <FaPlayCircle onClick={handlePlayVideo} className="card_icon" />
-              </span> */}
               <span className="exclude-plus-sign" onClick={handleIsAdded}>
                 {isAdded ? (
                   <MdOutlineFileDownloadDone className="card_icon" />

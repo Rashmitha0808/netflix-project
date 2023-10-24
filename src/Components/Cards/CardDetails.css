@@ -63,7 +63,11 @@ svg {
   overflow: hidden;
   cursor: pointer;
 }
-
+.dropdownIcon .card_icon {
+  padding: 5px;
+  height: 30px;
+  width: 30px;
+}
 .genre {
   display: flex;
   align-items: center;

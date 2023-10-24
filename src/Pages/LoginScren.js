@@ -51,10 +51,11 @@ function LoginScren() {
     <div className="loginScreen">
       <div className="loginScreen_background">
         <img
+          src="/Assets/logo.png"
           className="loginScreen_logo"
-          src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png"
           alt="netflix-logo"
         />
+
         {/* <Link to="/register">
           <button className="loginScren_button">Sign In</button>
         </Link> */}
@@ -74,7 +75,7 @@ function LoginScren() {
               <h3>
                 Ready to watch?{" "}
                 <strong>
-                  Enter your email as 'test@gamil.com' password as'12345'
+                  Enter your email as 'test@gmail.com' password as'12345'
                 </strong>{" "}
                 for better experience.
               </h3>
