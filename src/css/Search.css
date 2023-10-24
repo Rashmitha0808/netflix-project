@@ -22,3 +22,12 @@ h2 {
   /* display: flex;
   flex-wrap: wrap; */
 }
+@media screen and (max-width: 768px) {
+  .dropdown {
+    width: 166px;
+  }
+  .dropdown_signout,
+  .links {
+    align-items: start;
+  }
+}

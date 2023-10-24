@@ -51,29 +51,7 @@ function Card({
   const handlePlayVideo = (e) => {
     navigate(`/video/${_id}`);
   };
-  // const handlePlayVideo = () => {
-  //   console.log("im vdo");
-  //   navigate(`/video/${_id}`);
-  // };
-  //   useEffect(() => {
-  // }, [showVideoPlayer]);
-  // const handlePlayVideo = async () => {
-  //   try {
-  //     const response = await get(`/video/${_id}`); // Adjust the API endpoint
-  //     navigate(`/video/${_id}`);
-  //   } catch (error) {
-  //     console.error("Error fetching video URL", error);
-  //   }
-  // };
-  // const handlePlayVideo = (async) => {
-  //   try {
-  //     const response = await get(`/video/${_id}`);
-  //     const videoUrl = response.data.video_url;
-  //     navigate(`/video/${_id}`);
-  //   } catch (error) {
-  //     console.log("im not avle to go there", error);
-  //   }
-  // };
+
   useEffect(() => {
     setIsAdded(data?.message?.includes("add"));
   }, [data]);

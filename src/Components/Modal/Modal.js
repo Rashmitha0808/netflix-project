@@ -107,12 +107,12 @@ function Modal({
             <div className="modal_details">
               <span className="detailed_cast">
                 <span className="detailed_header_lists">cast: </span>{" "}
-                {cast.join(", ")}
+                {cast?.join(", ")}
               </span>
 
               <span className="detailed_cast">
                 <span className="detailed_header_lists">Genre: </span>
-                {keywords.join(", ")}
+                {keywords?.join(", ")}
               </span>
 
               <span className="detailed_director">
@@ -141,10 +141,10 @@ function Modal({
               <span>Director:</span> {director}
             </div>
             <div className="div_about">
-              <span>Cast: </span> {cast.join(", ")}
+              <span>Cast: </span> {cast?.join(", ")}
             </div>
             <div className="div_about">
-              <span>Genre: </span> {keywords.join(", ")}
+              <span>Genre: </span> {keywords?.join(", ")}
             </div>
 
             <div className="div_about">

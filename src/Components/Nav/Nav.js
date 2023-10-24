@@ -5,9 +5,10 @@ import DropdownMenu from "./DropdownMenu";
 import { useSelector } from "react-redux";
 import { useRef } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
-
+import Sidebar from "./Sidebar";
+import Portal from "../Modal/Portal";
 function Nav() {
-  const [closeSideBar, setCloseSidebar] = useState(true);
+  const [sideBar, setSideBar] = useState(false);
   const [show, handleShow] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
   const [arrow, setArrow] = useState(false);
@@ -47,15 +48,10 @@ function Nav() {
       handleShow(false);
     }
   };
-  const onOpenModalSidebar = (e) => {
-    if (e.stopProgation) e.stopProgation();
-    document.documentElement.style.overflow = "hidden";
-    setCloseSidebar(true);
+  const handleSidebar = () => {
+    setSideBar(!sideBar);
   };
-  const onCloseModalSidebar = (e) => {
-    document.documentElement.style.overflow = "";
-    setCloseSidebar(false);
-  };
+
   const toggleDropdown = () => {
     setShowDropdown(!showDropdown);
   };
@@ -73,14 +69,12 @@ function Nav() {
   return (
     <div className="pinning_main">
       <div className="pinning_header">
-        {closeSideBar && (
-          <div class="option-icon-container">
-            <AiOutlineMenu
-              className="option_menu"
-              onClose={onOpenModalSidebar}
-            />
-          </div>
-        )}
+        <div className="option-icon-container">
+          <AiOutlineMenu
+            onClick={handleSidebar}
+            className={`option_menu ${sideBar ? "open" : ""}`}
+          />
+        </div>
 
         <Link
           to="/"
@@ -149,7 +143,7 @@ function Nav() {
           </div>
 
           <Link to="/star">
-            <div className="nav-element">
+            <div className="nav-element notification">
               <span className="notifications">
                 <button className="notifications-menu">
                   <svg
@@ -189,6 +183,7 @@ function Nav() {
           </div>
         </div>
       </div>
+      {sideBar && <Sidebar />}
       {arrow && <DropdownMenu className="dropdown_menu_carter" />}
     </div>
   );
