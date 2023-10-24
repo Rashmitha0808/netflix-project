@@ -1,0 +1,156 @@
+.card {
+  /* width: 400px; */
+  height: max-content;
+  background-color: #1d1e22;
+  color: white;
+  border-radius: 8px;
+  position: relative;
+  width: 100%;
+  min-width: 250px;
+}
+.img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 16/9;
+  object-position: top;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.details {
+  padding: 10px 10px 15px;
+  position: relative;
+}
+.card_title {
+  position: absolute;
+  font-size: 14px;
+  bottom: 100%;
+  left: 0;
+  color: #fff;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.67);
+  padding: 10px;
+  background: linear-gradient(to top, #000, transparent);
+}
+.card_icon {
+  border-radius: 50%;
+  border: 1px solid gray;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.genre {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 10px;
+  text-transform: capitalize;
+  color: #d5d2d2;
+}
+.dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #dedede;
+}
+.dot:last-child {
+  display: none;
+}
+.dropdownIcon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.dropdownIcon .card_icon {
+  padding: 5px;
+  height: 20px;
+  width: 20px;
+}
+.description {
+  /* transform: scale3d(0, 0, 0); */
+  overflow: hidden;
+  padding-block: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.card_img {
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+  object-position: top;
+  max-height: 300px;
+  border-radius: 8px;
+}
+
+.cardDetails {
+  display: none;
+  z-index: 1000000;
+
+  box-shadow: 0, 10px, 5px rgb(252, 250, 250);
+  /* box-shadow: 0 8px 8px -4px lightblue; */
+  top: 0;
+  border-radius: 8px;
+  left: -10%;
+  width: 100%;
+  height: 100%;
+  top: -30%;
+  position: absolute;
+  /* transform: translate3d(1.3, 1.2, 1) perspective(500px); */
+  background-color: #1d1e22;
+}
+.card_wrapper:first-child .cardDetails {
+  left: 0;
+}
+.card_wrapper:hover {
+  height: 100%;
+  z-index: 100;
+}
+/* .card:hover .cardImage {
+  display: none;
+} */
+.card_wrapper:hover .cardDetails {
+  display: block;
+  /* z-index: 100000; */
+}
+.card-wrapper:hover .card-container .cardDetails {
+  display: block; /* Show the cardDetails when hovering */
+}
+.card_wrapper {
+  position: relative;
+  border-radius: 8px;
+  padding: 30px 0;
+  overflow: visible !important;
+}
+.card_icon {
+  width: 30px;
+  border: 1px solid grey;
+  height: 30px;
+  margin-right: 10px;
+}
+.card_icon.expand {
+  transform: rotate(180deg);
+}
+.card_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: visible;
+
+  position: relative;
+  z-index: 1;
+
+  /* added */
+  width: 100%;
+  height: 100%; /* Set the height to 100% to cover the entire card */
+  border-radius: 8px;
+}
+
+.card-container:hover {
+  z-index: 2;
+  width: 100%;
+  height: auto;
+  /* transform: scale(1.1); Optional: Enlarge the card on hover */
+}
+
+/* something old */

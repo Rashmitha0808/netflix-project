@@ -1,0 +1,21 @@
+.row {
+  color: white;
+  margin-left: 60px;
+}
+
+.row_posters {
+  aspect-ratio: 3/2;
+  max-height: 150px;
+  /* height: 100px; */
+  object-fit: cover;
+  margin-right: 10px;
+  width: 100%;
+  z-index: -1;
+  transition: transform 450ms;
+}
+
+@media screen and (max-width: 768px) {
+  .row {
+    margin-left: 18px;
+  }
+}

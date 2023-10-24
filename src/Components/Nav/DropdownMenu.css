@@ -1,0 +1,48 @@
+/* Add this CSS in a stylesheet or using a CSS-in-JS library like styled-components */
+.dropdown {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  position: fixed;
+  top: 74px;
+  right: 20px;
+  width: 220px;
+  z-index: 1;
+  font-size: 0.8rem;
+}
+
+.dropdown_lists {
+  display: flex;
+  list-style-type: none;
+  flex-direction: column;
+  text-align: center;
+}
+.dropdown_list {
+  padding: 8px;
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+}
+.help_dropdown {
+  border-bottom: 1px solid;
+}
+.list_icon {
+  float: left;
+}
+.dropdown_icons {
+  width: 30px;
+}
+.pencil {
+  background-color: transparent;
+}
+.dropdown_signout,
+.links {
+  text-decoration: none;
+  color: #fff;
+  align-items: center;
+}
+.dropdown_signout {
+  text-align: center;
+  margin-left: 45px;
+  padding-block: 12px;
+}

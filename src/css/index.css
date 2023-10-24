@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css?family=Netflix+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", "Roboto", "Ubuntu",
+    sans-serif;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* overflow-x: hidden; */
+  width: 100%;
+}
+/* .layout_main_container {
+  margin-top: 70px;
+} */
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.react-multi-carousel-list {
+  overflow: visible !important;
+}
+.react-multi-carousel-item:hover {
+  z-index: 1000 !important;
+}
+.react-multi-carousel-track {
+  gap: 25px;
+}

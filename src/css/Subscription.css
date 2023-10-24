@@ -1,0 +1,63 @@
+.main_subsrciption {
+  background-color: white;
+  height: 100vh;
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 340px;
+  /* width: 700px; */
+}
+.main_subsrciption h1 {
+  padding-bottom: 20px;
+}
+.para_subsription {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 20px;
+  margin-top: 5px;
+  /* width: 400px; */
+}
+.elements_para_sub {
+  display: flex;
+  align-items: center;
+}
+.icons_subs {
+  margin-right: 10px;
+  color: rgb(139, 33, 33);
+  font-size: 30px;
+}
+.icons_subscription {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: end;
+  align-items: center;
+}
+.mobile_sub,
+.standard_sub,
+.basic_sub,
+.premium_sub {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+
+  color: white;
+}
+/*
+.lists_subscription {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 10px;
+}
+.list_sub {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+} */

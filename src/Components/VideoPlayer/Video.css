@@ -1,0 +1,78 @@
+.video_player_head {
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.video_player {
+  height: 100vh;
+  width: 100%;
+}
+
+.back_btn_vdo {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  top: 29px;
+  left: 38px;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.progress_container {
+  display: flex;
+  padding-bottom: 20px;
+  width: 100%;
+}
+.progressBar {
+  background-color: red;
+  height: 3px;
+  width: 100%;
+  transition: height 0.3s;
+  background: linear-gradient(
+    to right,
+    red var(--play-progress, 0%),
+    transparent 12%
+  );
+}
+
+.bottom_sec_vdo {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  padding-inline: 38px;
+  left: 0;
+}
+.progressBar:hover {
+  height: 6px;
+}
+.video_controlers {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  padding-block: 15px;
+}
+.video_controler {
+  cursor: pointer;
+  color: white;
+  display: flex;
+
+  gap: 40px;
+
+  font-size: 50px;
+  transition: transform 0.2s;
+}
+
+.vdo_forward:hover,
+.video_volume:hover,
+.vdo_back:hover,
+.vdo_btn_play:hover {
+  transform: scale(1.2);
+}
+video::-webkit-media-controls-play-button,
+video::-webkit-media-controls-start-playback-button {
+  display: none;
+}
+video::-webkit-media-controls-panel {
+  display: none;
+}

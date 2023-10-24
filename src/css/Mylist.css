@@ -1,0 +1,21 @@
+.watchlist_container {
+  height: 100vh;
+  color: #fff;
+  z-index: 10000;
+
+  /* width: 100%; */
+  margin-bottom: 100px;
+  padding-inline: 54px;
+}
+.watchlist_header {
+  padding-bottom: 30px;
+}
+h2 {
+  font-size: 1.7rem;
+}
+.main_view {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+
+  gap: 10px;
+}
