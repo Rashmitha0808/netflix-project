@@ -1,15 +1,9 @@
 // DropdownComponent.js
 import React from "react";
 import "../Nav/DropdownMenu.css";
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser, faCog } from "@fortawesome/free-solid-svg-icons";
-import { UseSelector } from "react-redux/es/hooks/useSelector";
-import UserSlice, { logOutUser } from "../../store/UserSlice";
-import Home from "../../Pages/Home";
+import { logOutUser } from "../../store/UserSlice";
 import { useDispatch } from "react-redux";
-import ManageProfiles from "./ManageProfiles";
 
 function DropdownMenu() {
   const dispatch = useDispatch();
@@ -26,7 +20,8 @@ function DropdownMenu() {
               alt="avatar-img"
               className="dropdown_icons"
             />
-            Anni
+            Chappe
+            {/* Anni */}
           </li>
         </Link>
         <Link className="links" to="/">
@@ -36,7 +31,8 @@ function DropdownMenu() {
               src="https://occ-0-6624-2164.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABcJE6sna7-v-fDszqTSTLqoNLNTV8u6FCGOehw7JKWVmU-oLMoXYX6K0f2nKdOFZcATnH9GAw2kgTZTxZj1cEPt9GYnRYbc.png?r=54d"
               alt="avatar-img"
             />
-            Chetan Karwa
+            Chandu
+            {/* Chetan Karwa */}
           </li>
         </Link>
 

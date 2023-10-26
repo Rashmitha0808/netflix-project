@@ -56,7 +56,7 @@
   cursor: pointer;
   color: white;
   display: flex;
-
+  align-items: center;
   gap: 40px;
 
   font-size: 50px;
@@ -75,4 +75,21 @@ video::-webkit-media-controls-start-playback-button {
 }
 video::-webkit-media-controls-panel {
   display: none;
+}
+@media screen and (max-width: 768px) {
+  .video_controler {
+    gap: 20px;
+  }
+  .vdo_icons,
+  .vdo_back,
+  .vdo_forward {
+    font-size: 30px;
+  }
+  .vdo_back,
+  .vdo_forward {
+    width: 30px;
+  }
+  .video_time {
+    font-size: 10px;
+  }
 }

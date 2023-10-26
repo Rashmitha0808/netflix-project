@@ -91,7 +91,10 @@ const Video = () => {
   const { video_url } = data;
   return (
     <div className="video_player_head" onClick={handlePlay}>
-      <PiArrowLeftBold className="back_btn_vdo" onClick={handleGoBack} />
+      <PiArrowLeftBold
+        className="back_btn_vdo  vdo_icons"
+        onClick={handleGoBack}
+      />
 
       <video
         ref={videoRef}
@@ -111,11 +114,12 @@ const Video = () => {
           <div className="video_controler">
             <div>
               {play ? (
-                <IoIosPause className="vdo_btn_play" />
+                <IoIosPause className="vdo_btn_play  vdo_icons" />
               ) : (
-                <FaPlay className="vdo_btn_play" />
+                <FaPlay className="vdo_btn_play  vdo_icons" />
               )}
             </div>
+
             <svg
               onClick={handlePrev}
               width="50"
@@ -134,6 +138,7 @@ const Video = () => {
                 fill="currentColor"
               ></path>
             </svg>
+
             <svg
               onClick={handleForward}
               width="50"
@@ -141,7 +146,7 @@ const Video = () => {
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="vdo_forward"
+              className="vdo_forward vdo_icons"
               data-name="Forward10"
               aria-hidden="true"
             >
@@ -155,9 +160,9 @@ const Video = () => {
 
             <div onClick={handleMute}>
               {mute ? (
-                <BsVolumeMute className="video_volume" />
+                <BsVolumeMute className="video_volume vdo_icons" />
               ) : (
-                <BsVolumeUp className="video_volume" />
+                <BsVolumeUp className="video_volume vdo_icons" />
               )}
             </div>
           </div>
