@@ -46,3 +46,8 @@
   margin-left: 45px;
   padding-block: 12px;
 }
+@media screen and (max-width: 768px) {
+  .dropdown_signout {
+    margin: auto;
+  }
+}

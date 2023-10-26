@@ -1,5 +1,4 @@
 .watchlist_container {
-  height: 100vh;
   color: #fff;
   z-index: 10000;
 
@@ -18,4 +17,14 @@ h2 {
   grid-template-columns: repeat(6, 1fr);
 
   gap: 10px;
+}
+@media screen and (max-width: 768px) {
+  .main_view {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (max-width: 520px) {
+  .main_view {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
