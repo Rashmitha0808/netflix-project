@@ -33,7 +33,8 @@
   display: flex;
   flex-direction: row;
   gap: 10px;
-  justify-content: end;
+  /* justify-content: end; */
+  justify-content: flex-end;
   align-items: center;
 }
 .mobile_sub,
