@@ -11,11 +11,6 @@ const Layout = ({ children }) => {
     return children;
   }
 
-  // old
-  // if (pathname.includes("login" || "video/:_id")) {
-  //   return children;
-  // }
-
   return (
     <>
       <Nav />

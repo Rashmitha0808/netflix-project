@@ -16,9 +16,6 @@ function Modal({
   onClose,
   children,
 }) {
-  // const modalStyle = {
-  //     display: isOpen ? 'block' : 'none',
-  // }
   const { data, get } = useAPI([]);
   useEffect(() => {
     get("/ott/show");

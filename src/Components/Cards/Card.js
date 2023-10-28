@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "../Cards/CardDetails.css";
 import { FaPlayCircle } from "react-icons/fa";
 import { HiPlus, HiChevronDown } from "react-icons/hi2";
@@ -9,7 +9,6 @@ import { useEffect } from "react";
 import { Fragment } from "react";
 import Modal from "../Modal/Modal";
 import Portal from "../Modal/Portal";
-import Video from "../VideoPlayer/Video";
 
 function Card({
   thumbnail,
@@ -26,7 +25,6 @@ function Card({
   // const [expand, setExpand] = useState(false);
   const [isAdded, setIsAdded] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [showVideoPlayer, setShowVideoPlayer] = useState(false);
   const { data, patch } = useAPI();
   const { data: watchlist, get } = useAPI();
 

@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import "../Banner/Banner.css";
-import axios from "../../API/axios";
 import useAPI from "../../Hooks/useAPI";
 import { Link, useNavigate } from "react-router-dom";
 

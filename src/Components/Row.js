@@ -26,7 +26,7 @@ function Row({ title, fetchUrl, isLargeRow = false }) {
   return (
     <>
       <div className="row">
-        <h2>{title}</h2>
+        <h2 className="row_header">{title}</h2>
         <div className="row_posters">
           <CarouselReact movies={movies} />
         </div>

@@ -1,5 +1,4 @@
 import React from "react";
-import useAPI from "../Hooks/useAPI";
 import axios from "../API/axios";
 import { useEffect } from "react";
 import Card from "../Components/Cards/Card";

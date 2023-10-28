@@ -1,5 +1,5 @@
 //store in (API key)
-const API_KEY = "47ae45b316a49c696d64ff975af42329";
+// const API_KEY = "47ae45b316a49c696d64ff975af42329";
 
 const requests = {
   fetchTrending: `/ott/show?filter={"type" : "web series"}&page=1&limit=20`,
