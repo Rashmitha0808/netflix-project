@@ -8,18 +8,19 @@ import { useLocation, useNavigate, useParams } from "react-router-dom";
 import useAPI from "../../Hooks/useAPI";
 
 const Video = () => {
-  const [play, setPlay] = useState(true);
+  const [play, setPlay] = useState(false);
   const [mute, setMute] = useState(false);
   const [remainingTime, setRemainingTime] = useState("00:00");
   const navigate = useNavigate();
+
   const { id } = useParams();
+
   const UpdateRemainingTime = (videoElement) => {
     const duration = videoElement.duration;
     const currentTime = videoElement.currentTime;
 
-    const remainingSeconds = Math.floor(duration - currentTime);
-    const minutes = Math.floor(remainingSeconds / 60);
-    const seconds = remainingSeconds % 60;
+    const minutes = Math.floor(currentTime / 60);
+    const seconds = Math.floor(currentTime % 60);
 
     setRemainingTime(`${minutes}:${seconds < 10 ? "0" : ""}${seconds}`);
   };
@@ -49,21 +50,18 @@ const Video = () => {
     navigate("../");
     console.log("go back");
   };
-  const handlePlay = () => {
+  const handlePlay = (e) => {
+    e.stopPropagation();
     const videoElement = videoRef.current;
     if (videoElement) {
-      if (play) videoRef.current.play();
-      else videoRef.current.pause();
+      if (play) videoRef.current.pause();
+      else videoRef.current.play();
       setPlay(!play);
     }
   };
-  // const handlePlay = () => {
 
-  //   if (play) videoRef.current.pause();
-  //   else videoRef.current.play();
-  //   setPlay(!play);
-  // };
-  const handleMute = () => {
+  const handleMute = (e) => {
+    e.stopPropagation();
     const videoElement = videoRef.current;
     if (videoElement) {
       videoElement.muted = !videoElement.muted;
@@ -114,9 +112,9 @@ const Video = () => {
           <div className="video_controler">
             <div>
               {play ? (
-                <IoIosPause className="vdo_btn_play  vdo_icons" />
-              ) : (
                 <FaPlay className="vdo_btn_play  vdo_icons" />
+              ) : (
+                <IoIosPause className="vdo_btn_play  vdo_icons" />
               )}
             </div>
 

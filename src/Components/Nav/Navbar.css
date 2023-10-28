@@ -73,6 +73,7 @@
   align-items: center;
   position: relative;
   transition: margin-right 2s, color 1s;
+  cursor: pointer;
 }
 .input_searchbox {
   width: 200px;

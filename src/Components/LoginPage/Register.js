@@ -1,17 +1,17 @@
 import React, { useState } from "react";
-import "../css/Register.css";
+import "../LoginPage/Register.css";
 import { useDispatch, useSelector } from "react-redux";
-import { signUpUser } from "../store/UserSlice";
+import { signUpUser } from "../../store/UserSlice";
 import { useNavigate } from "react-router-dom";
 
-function Register({ togglePage }) {
+function Register({ togglePage, userEmail, handleEmailChange }) {
   const { authenticated } = useSelector((state) => state.user);
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const [error, setError] = useState("");
   const [formData, setFormData] = useState({
     name: "",
-    email: "",
+    email: userEmail,
     password: "",
     appType: "ott",
   });

@@ -9,9 +9,9 @@ import Layout from "./Components/Layout";
 import ManageProfiles from "./Components/Nav/ManageProfiles";
 import Mylist from "./Pages/Mylist";
 import Video from "./Components/VideoPlayer/Video";
-import Subscription from "./Pages/Subscription";
 import Star from "./Pages/Star";
-import Register from "./Components/Register";
+import Movies from "./Pages/Movies";
+import Tvshows from "./Pages/Tvshows";
 
 function App() {
   return (
@@ -22,11 +22,12 @@ function App() {
           <Route path="/login" element={<LoginScreen />} />
           <Route path="/profile" element={<ManageProfiles />} />
           <Route path="/search/:query" element={<Search />} />
+
           <Route path="/mylist" element={<Mylist />} />
           <Route path="/video/:id" element={<Video />} />
-          <Route path="/subscription" element={<Subscription />} />
           <Route path="/star" element={<Star />} />
-          <Route path="/register" element={<Register />} />
+          <Route path="/movies" element={<Movies />} />
+          <Route path="/tv-shows" element={<Tvshows />} />
 
           <Route
             path="/"

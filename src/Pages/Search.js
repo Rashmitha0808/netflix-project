@@ -7,11 +7,10 @@ import { useState } from "react";
 import "../css/Search.css";
 const Search = () => {
   const params = useParams();
-  const [data, setMovies] = useState([]);
+  const [data, setData] = useState([]);
   console.log(params);
   // const { data, isLoading, isError, get } = useAPI();
   //   console.log(data);
-
   // useEffect(() => {
   //   fetch;
   //   get(`/ott/show?search={"title":"${params.query}"}&limit=1`);
@@ -21,9 +20,9 @@ const Search = () => {
     async function fetcData() {
       try {
         const request = await axios.get(
-          `/ott/show?search={"title":"${params.query}"}&limit=10`
+          `/ott/show?search={"title":"${params.query}"}&limit=20`
         );
-        setMovies(request?.data?.data);
+        setData(request?.data?.data);
         // console.log(request);
         return request;
       } catch (error) {
@@ -35,7 +34,11 @@ const Search = () => {
 
   return (
     <div className="searchResultsWrapper">
-      <h3 className="searchHeading">MORE RESULT</h3>
+      <h3 className="searchHeading">
+        {data.length === 0
+          ? `No results found for ' ${params.query} '`
+          : `Results for ' ${params.query} '`}
+      </h3>
       <div className="searchCardsContainer">
         {data?.map((show) => (
           <Card className="search_card" {...show} key={show._id} />

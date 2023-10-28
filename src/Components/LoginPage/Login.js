@@ -1,10 +1,9 @@
-import "../css/Login.css";
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { logInUser } from "../store/UserSlice";
+import { logInUser } from "../../store/UserSlice";
 import { useNavigate } from "react-router-dom";
-
-function Login({ togglePage }) {
+import "../LoginPage/Register.css";
+function Login({ togglePage, userEmail, handleEmailChange }) {
   const { authenticated, error: authError } = useSelector(
     (state) => state.user
   );
@@ -12,7 +11,7 @@ function Login({ togglePage }) {
   const navigate = useNavigate();
   const [error, setError] = useState("");
   const [formData, setFormData] = useState({
-    email: "",
+    email: userEmail,
     password: "",
     appType: "ott",
   });

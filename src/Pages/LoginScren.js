@@ -3,8 +3,8 @@ import "../css/LoginScreen.css";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { isUserLoggedIn } from "../store/UserSlice";
-import Login from "../Components/Login";
-import Register from "../Components/Register";
+import Login from "../Components/LoginPage/Login";
+import Register from "../Components/LoginPage/Register";
 
 function LoginScren() {
   const [isSignInPage, setIsSignInPage] = useState(true);
@@ -64,7 +64,11 @@ function LoginScren() {
         <div className="loginScreen_body">
           {isLoginPage ? (
             isSignInPage ? (
-              <Login togglePage={toggleSignInPage} />
+              <Login
+                togglePage={toggleSignInPage}
+                userEmail={userInfo.email}
+                onChange={handleChange}
+              />
             ) : (
               <Register togglePage={toggleSignInPage} />
             )
@@ -82,7 +86,14 @@ function LoginScren() {
               </h3>
               <div className="loginScreen_input">
                 <form onSubmit={togglePage}>
-                  <input type="email" placeholder="Email address" id="email" />
+                  <input
+                    type="email"
+                    placeholder="Email address"
+                    name="email"
+                    value={userInfo.email}
+                    id="email"
+                    onChange={handleChange}
+                  />
                   <button className="loginScreen_getStarted">
                     GET STARTED
                   </button>

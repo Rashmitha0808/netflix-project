@@ -1,24 +1,24 @@
-.watchlist_container {
+.show_container {
   color: #fff;
   z-index: 10000;
   padding-top: 80px;
   margin-bottom: 100px;
   padding-inline: 54px;
 }
-.watchlist_header {
+.show_header {
   padding-bottom: 20px;
 }
-.watchlist_header h2 {
+.show_header h2 {
   font-size: 1.7rem;
 }
-.main_view {
+.view_show {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 10px;
 }
 
 @media screen and (max-width: 520px) {
-  .watchlist_header h2 {
+  .show_header h2 {
     font-size: 1rem;
   }
 }

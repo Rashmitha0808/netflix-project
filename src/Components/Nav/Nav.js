@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import "../Nav/Navbar.css";
 import DropdownMenu from "./DropdownMenu";
 import { useSelector } from "react-redux";
@@ -7,6 +7,7 @@ import { useRef } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import Sidebar from "./Sidebar";
 function Nav() {
+  const location = useLocation();
   const [sideBar, setSideBar] = useState(false);
   const [arrow, setArrow] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -50,14 +51,16 @@ function Nav() {
     };
   }, [searchValue]);
 
+  useEffect(() => {
+    if (location.pathname !== "/") {
+      setSideBar(false);
+    }
+  }, [location]);
   return (
     <div className="pinning_main">
       <div className="pinning_header">
         <div className="option-icon-container">
-          <AiOutlineMenu
-            onClick={handleSidebar}
-            className={`option_menu ${sideBar ? "open" : ""}`}
-          />
+          <AiOutlineMenu onClick={handleSidebar} className="option_menu" />
         </div>
 
         <Link
@@ -80,7 +83,7 @@ function Nav() {
             <Link to="/movies">Movies</Link>
           </li>
           <li className="navigation_tab">
-            <Link to="/new-popular">New &amp; Popular</Link>
+            <Link to="/Star">New &amp; Popular</Link>
           </li>
           <li className="navigation_tab">
             <Link to="/mylist">My List</Link>

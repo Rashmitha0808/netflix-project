@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "../API/axios";
 import "../css/Row.css";
 
-import CarouselReact from "./Carousel";
+import CarouselReact from "./Cards/Carousel";
 
 function Row({ title, fetchUrl = false }) {
   const [movies, setMovies] = useState([]);

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "../Cards/CardDetails.css";
+import "../Cards/Card.css";
 import { FaPlayCircle } from "react-icons/fa";
 import { HiPlus, HiChevronDown } from "react-icons/hi2";
 import { MdOutlineFileDownloadDone } from "react-icons/md";
