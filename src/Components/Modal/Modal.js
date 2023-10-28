@@ -30,7 +30,7 @@ function Modal({
     <div className="modalStyle">
       <div className="detailed_page">
         <div className="detailed_card">
-          <img className="detailed_img" src={thumbnail} />
+          <img className="detailed_img" src={thumbnail} alt="detailed" />
           <div className="shadow"></div>
           <div className="detailed_btns">
             <button className="detailed_play">

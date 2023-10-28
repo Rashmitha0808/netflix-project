@@ -69,7 +69,7 @@ function Card({
     <>
       <div className="card_wrapper">
         <div className="card">
-          <img className="card_img" src={thumbnail} />
+          <img className="card_img" src={thumbnail} alt="card" />
         </div>
 
         <div className="cardDetails">

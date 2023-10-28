@@ -6,7 +6,6 @@ import { useSelector } from "react-redux";
 import { useRef } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import Sidebar from "./Sidebar";
-import Portal from "../Modal/Portal";
 function Nav() {
   const [sideBar, setSideBar] = useState(false);
   const [show, handleShow] = useState(false);

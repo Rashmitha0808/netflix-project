@@ -10,6 +10,7 @@ const Footer = () => {
             href="https://www.facebook.com/NetflixIN/"
             target="_blank"
             aria-label="facebook"
+            rel="noreferrer"
           >
             <svg
               width="24"
@@ -34,6 +35,7 @@ const Footer = () => {
             href="https://www.instagram.com/Netflix_IN/"
             target="_blank"
             aria-label="instagram"
+            rel="noreferrer"
           >
             <svg
               width="24"
@@ -58,6 +60,7 @@ const Footer = () => {
             href="https://twitter.com/netflixindia"
             target="_blank"
             aria-label="twitter"
+            rel="noreferrer"
           >
             <svg
               width="24"
@@ -82,6 +85,7 @@ const Footer = () => {
             href="https://www.youtube.com/channel/UCZSNzBgFub_WWil6TOTYwAg"
             target="_blank"
             aria-label="youtube"
+            rel="noreferrer"
           >
             <svg
               width="24"
@@ -104,36 +108,56 @@ const Footer = () => {
         </div>
         <ul className="member-footer-links">
           <li className="member-footer-link-wrapper">
-            <a className="member-footer-link" href="/browse/audio-description">
+            <a
+              className="member-footer-link"
+              target="_blank"
+              href="/browse/audio-description"
+            >
               <span className="member-footer-link-content">
                 Audio Description
               </span>
             </a>
           </li>
           <li className="member-footer-link-wrapper">
-            <a className="member-footer-link" href="https://help.netflix.com/">
+            <a
+              className="member-footer-link"
+              target="_blank"
+              href="https://help.netflix.com/"
+            >
               <span className="member-footer-link-content">Help Centre</span>
             </a>
           </li>
           <li className="member-footer-link-wrapper">
-            <a className="member-footer-link" href="/redeem">
+            <a className="member-footer-link" target="_blank" href="/redeem">
               <span className="member-footer-link-content">Gift Cards</span>
             </a>
           </li>
           <li className="member-footer-link-wrapper">
-            <a className="member-footer-link" href="https://media.netflix.com/">
+            <a
+              className="member-footer-link"
+              target="_blank"
+              href="https://media.netflix.com/"
+            >
               <span className="member-footer-link-content">Media Centre</span>
             </a>
           </li>
           <li className="member-footer-link-wrapper">
-            <a className="member-footer-link" href="http://ir.netflix.com/">
+            <a
+              className="member-footer-link"
+              target="_blank"
+              href="http://ir.netflix.com/"
+            >
               <span className="member-footer-link-content">
                 Investor Relations
               </span>
             </a>
           </li>
           <li className="member-footer-link-wrapper">
-            <a className="member-footer-link" href="https://jobs.netflix.com/">
+            <a
+              className="member-footer-link"
+              target="_blank"
+              href="https://jobs.netflix.com/"
+            >
               <span className="member-footer-link-content">Jobs</span>
             </a>
           </li>
@@ -141,6 +165,7 @@ const Footer = () => {
             <a
               className="member-footer-link"
               href="https://help.netflix.com/legal/termsofuse"
+              target="_blank"
             >
               <span className="member-footer-link-content">Terms of Use</span>
             </a>
@@ -149,6 +174,7 @@ const Footer = () => {
             <a
               className="member-footer-link"
               href="https://help.netflix.com/legal/privacy"
+              target="_blank"
             >
               <span className="member-footer-link-content">Privacy</span>
             </a>
@@ -157,12 +183,13 @@ const Footer = () => {
             <a
               className="member-footer-link"
               href="https://help.netflix.com/legal/notices"
+              target="_blank"
             >
               <span className="member-footer-link-content">Legal Notices</span>
             </a>
           </li>
           <li className="member-footer-link-wrapper">
-            <a className="member-footer-link" href="/Cookies">
+            <a className="member-footer-link" target="_blank" href="/Cookies">
               <span className="member-footer-link-content">
                 Cookie Preferences
               </span>
@@ -171,6 +198,7 @@ const Footer = () => {
           <li className="member-footer-link-wrapper">
             <a
               className="member-footer-link"
+              target="_blank"
               href="https://help.netflix.com/legal/corpinfo"
             >
               <span className="member-footer-link-content">
@@ -180,6 +208,7 @@ const Footer = () => {
           </li>
           <li className="member-footer-link-wrapper">
             <a
+              target="_blank"
               className="member-footer-link"
               href="https://help.netflix.com/contactus"
             >
