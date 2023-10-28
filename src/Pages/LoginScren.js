@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../css/LoginScreen.css";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { isUserLoggedIn } from "../store/UserSlice";
 import Login from "../Components/Login";
@@ -75,7 +75,8 @@ function LoginScren() {
               <h3>
                 Ready to watch?{" "}
                 <strong>
-                  Enter your email as 'test@gmail.com' password as'12345'
+                  Enter your email as 'test@gmail.com' password as
+                  &apos;12345&apos;
                 </strong>{" "}
                 for better experience.
               </h3>

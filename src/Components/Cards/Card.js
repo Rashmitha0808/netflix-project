@@ -19,19 +19,18 @@ function Card({
   cast,
   director,
   createdAt,
-  video_url,
 }) {
   const navigate = useNavigate();
   // const [expand, setExpand] = useState(false);
   const [isAdded, setIsAdded] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const { data, patch } = useAPI();
-  const { data: watchlist, get } = useAPI();
+  const { data: watchlist } = useAPI();
 
   // const handleExpand = () => {
   //   setExpand(!expand);
   // };
-  const handleIsAdded = (e) => {
+  const handleIsAdded = () => {
     patch("/ott/watchlist/like", { showId: _id });
   };
   const openModal = (e) => {
@@ -41,12 +40,12 @@ function Card({
     setIsModalOpen(true);
   };
 
-  const closeModal = (e) => {
+  const closeModal = () => {
     console.log("debug");
     document.documentElement.style.overflow = "";
     setIsModalOpen(false);
   };
-  const handlePlayVideo = (e) => {
+  const handlePlayVideo = () => {
     navigate(`/video/${_id}`);
   };
 

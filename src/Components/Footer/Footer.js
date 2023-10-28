@@ -10,7 +10,7 @@ const Footer = () => {
             href="https://www.facebook.com/NetflixIN/"
             target="_blank"
             aria-label="facebook"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             <svg
               width="24"
@@ -35,7 +35,7 @@ const Footer = () => {
             href="https://www.instagram.com/Netflix_IN/"
             target="_blank"
             aria-label="instagram"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             <svg
               width="24"
@@ -60,7 +60,7 @@ const Footer = () => {
             href="https://twitter.com/netflixindia"
             target="_blank"
             aria-label="twitter"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             <svg
               width="24"
@@ -85,7 +85,7 @@ const Footer = () => {
             href="https://www.youtube.com/channel/UCZSNzBgFub_WWil6TOTYwAg"
             target="_blank"
             aria-label="youtube"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             <svg
               width="24"
@@ -112,6 +112,7 @@ const Footer = () => {
               className="member-footer-link"
               target="_blank"
               href="/browse/audio-description"
+              rel="noopener noreferrer"
             >
               <span className="member-footer-link-content">
                 Audio Description
@@ -123,12 +124,18 @@ const Footer = () => {
               className="member-footer-link"
               target="_blank"
               href="https://help.netflix.com/"
+              rel="noopener noreferrer"
             >
               <span className="member-footer-link-content">Help Centre</span>
             </a>
           </li>
           <li className="member-footer-link-wrapper">
-            <a className="member-footer-link" target="_blank" href="/redeem">
+            <a
+              className="member-footer-link"
+              rel="noopener noreferrer"
+              target="_blank"
+              href="/redeem"
+            >
               <span className="member-footer-link-content">Gift Cards</span>
             </a>
           </li>
@@ -137,6 +144,7 @@ const Footer = () => {
               className="member-footer-link"
               target="_blank"
               href="https://media.netflix.com/"
+              rel="noopener noreferrer"
             >
               <span className="member-footer-link-content">Media Centre</span>
             </a>
@@ -146,6 +154,7 @@ const Footer = () => {
               className="member-footer-link"
               target="_blank"
               href="http://ir.netflix.com/"
+              rel="noopener noreferrer"
             >
               <span className="member-footer-link-content">
                 Investor Relations
@@ -157,6 +166,7 @@ const Footer = () => {
               className="member-footer-link"
               target="_blank"
               href="https://jobs.netflix.com/"
+              rel="noopener noreferrer"
             >
               <span className="member-footer-link-content">Jobs</span>
             </a>
@@ -166,6 +176,7 @@ const Footer = () => {
               className="member-footer-link"
               href="https://help.netflix.com/legal/termsofuse"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <span className="member-footer-link-content">Terms of Use</span>
             </a>
@@ -175,6 +186,7 @@ const Footer = () => {
               className="member-footer-link"
               href="https://help.netflix.com/legal/privacy"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <span className="member-footer-link-content">Privacy</span>
             </a>
@@ -184,12 +196,18 @@ const Footer = () => {
               className="member-footer-link"
               href="https://help.netflix.com/legal/notices"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <span className="member-footer-link-content">Legal Notices</span>
             </a>
           </li>
           <li className="member-footer-link-wrapper">
-            <a className="member-footer-link" target="_blank" href="/Cookies">
+            <a
+              className="member-footer-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="/Cookies"
+            >
               <span className="member-footer-link-content">
                 Cookie Preferences
               </span>
@@ -199,6 +217,7 @@ const Footer = () => {
             <a
               className="member-footer-link"
               target="_blank"
+              rel="noopener noreferrer"
               href="https://help.netflix.com/legal/corpinfo"
             >
               <span className="member-footer-link-content">
@@ -209,6 +228,7 @@ const Footer = () => {
           <li className="member-footer-link-wrapper">
             <a
               target="_blank"
+              rel="noopener noreferrer"
               className="member-footer-link"
               href="https://help.netflix.com/contactus"
             >

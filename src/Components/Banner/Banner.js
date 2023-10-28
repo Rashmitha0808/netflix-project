@@ -11,7 +11,7 @@ function Banner() {
   const navigate = useNavigate();
   const movie = data?.[0];
 
-  const handlePlayVideo = (e) => {
+  const handlePlayVideo = () => {
     navigate(`/video/${data?.[0]._id}`);
     // console.log(data?.[0]._id, "data");
   };

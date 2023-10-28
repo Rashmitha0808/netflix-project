@@ -1,7 +1,7 @@
 import "../css/Login.css";
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { logInUser, signUpUser } from "../store/UserSlice";
+import { logInUser } from "../store/UserSlice";
 import { useNavigate } from "react-router-dom";
 
 function Login({ togglePage }) {

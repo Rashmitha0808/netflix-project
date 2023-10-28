@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link, Navigate, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../Nav/Navbar.css";
 import DropdownMenu from "./DropdownMenu";
 import { useSelector } from "react-redux";
@@ -8,8 +8,6 @@ import { AiOutlineMenu } from "react-icons/ai";
 import Sidebar from "./Sidebar";
 function Nav() {
   const [sideBar, setSideBar] = useState(false);
-  const [show, handleShow] = useState(false);
-  const [showDropdown, setShowDropdown] = useState(false);
   const [arrow, setArrow] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [searchValue, setSearchValue] = useState("");
@@ -21,10 +19,6 @@ function Nav() {
       navigate("/login");
     }
   }, [authenticated]);
-  useEffect(() => {
-    window.addEventListener("scroll", trasitionNavBar);
-    return () => window.removeEventListener("scroll", trasitionNavBar);
-  }, []);
 
   const openSearch = () => {
     console.log(searchRef.current);
@@ -40,20 +34,11 @@ function Nav() {
   const handleSearch = (e) => {
     setSearchValue(e.target.value);
   };
-  const trasitionNavBar = () => {
-    if (window.scrollY > 100) {
-      handleShow(true);
-    } else {
-      handleShow(false);
-    }
-  };
+
   const handleSidebar = () => {
     setSideBar(!sideBar);
   };
 
-  const toggleDropdown = () => {
-    setShowDropdown(!showDropdown);
-  };
   // Debounce applied here
   useEffect(() => {
     const timerId = setTimeout(() => {

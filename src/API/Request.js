@@ -1,6 +1,3 @@
-//store in (API key)
-// const API_KEY = "47ae45b316a49c696d64ff975af42329";
-
 const requests = {
   fetchTrending: `/ott/show?filter={"type" : "web series"}&page=1&limit=20`,
   fetchNetflixOriginals: `/ott/show?filter={"type" : "web series"}&page=2&limit=20`,
@@ -13,6 +10,8 @@ const requests = {
   login: `/user/login`,
   signup: `user/signup`,
 };
+//store in (API key)
+// const API_KEY = "47ae45b316a49c696d64ff975af42329";
 
 // movie, web series, tv show, video song, documentary, trailer
 //genere

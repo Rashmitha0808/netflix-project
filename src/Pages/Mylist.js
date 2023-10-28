@@ -7,10 +7,10 @@ import Card from "../Components/Cards/Card";
 const Mylist = () => {
   const [watchListItems, setWatchListItems] = useState([]);
 
-  const removeFromWatchlist = (item) => {
-    const updatedList = watchListItems.filter((i) => i.index !== item.index);
-    setWatchListItems(updatedList);
-  };
+  // const removeFromWatchlist = (item) => {
+  //   const updatedList = watchListItems.filter((i) => i.index !== item.index);
+  //   setWatchListItems(updatedList);
+  // };
   const { data, get } = useAPI();
 
   useEffect(() => {
@@ -25,7 +25,7 @@ const Mylist = () => {
         <h2>My Watchlist</h2>
       </div>
       <div className="main_view">
-        {data?.shows?.map((item, index) => (
+        {data?.shows?.map((item) => (
           <Card {...item} key={item._id} />
         ))}
       </div>

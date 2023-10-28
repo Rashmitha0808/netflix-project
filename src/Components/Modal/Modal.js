@@ -11,10 +11,7 @@ function Modal({
   keywords,
   director,
   createdAt,
-  _id,
-  isOpen,
   onClose,
-  children,
 }) {
   const { data, get } = useAPI([]);
   useEffect(() => {
@@ -24,7 +21,7 @@ function Modal({
   const createdAtDate = new Date(createdAtString);
 
   // const date = createdAtDate.toDateString();
-  const time = createdAtDate.toTimeString().split(" ")[0];
+  // const time = createdAtDate.toTimeString().split(" ")[0];
 
   return (
     <div className="modalStyle">

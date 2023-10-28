@@ -4,10 +4,9 @@ import "../css/Row.css";
 
 import CarouselReact from "./Carousel";
 
-function Row({ title, fetchUrl, isLargeRow = false }) {
+function Row({ title, fetchUrl = false }) {
   const [movies, setMovies] = useState([]);
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedMovies, setSelectedMovies] = useState(null);
+
   const renderBackdrop = (props) => <div className="backdrop" {...props} />;
   useEffect(() => {
     async function fetcData() {

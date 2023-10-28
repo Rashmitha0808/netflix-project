@@ -2,7 +2,6 @@ import React from "react";
 import "../css/HomeScreen.css";
 import requests from "../API/Request";
 import Row from "../Components/Row";
-import Nav from "../Components/Nav/Nav";
 import Banner from "../Components/Banner/Banner";
 
 function Home() {
