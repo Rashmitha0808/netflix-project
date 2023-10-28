@@ -51,4 +51,7 @@
   .dropdown_signout {
     margin: auto;
   }
+  .dropdown {
+    width: 166px;
+  }
 }

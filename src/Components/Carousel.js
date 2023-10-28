@@ -35,7 +35,6 @@ function CarouselReact({ movies }) {
       customTransition="all .5"
       transitionDuration={500}
       containerclassName="carousel-container"
-      removeArrowOnDeviceType={["tablet", "mobile"]}
       dotListclassName="custom-dot-list-style"
       itemclassName="carousel-item-padding-40-px"
     >

@@ -127,11 +127,13 @@ svg {
 }
 
 .card_wrapper:hover .cardDetails {
+  /*     transform: translate(1%, 15%) scale(1.2); */
+  transform: translate(10%, 10%) scale(1.2);
   display: block;
   z-index: 100000;
   width: 100%;
   height: 82%;
-  transform: scale3d(1.2, 1.2, 1) perspective(500px) translateZ(0);
+  /* transform: scale3d(1.2, 1.2, 1) perspective(500px) translateZ(0); */
 }
 
 /* .card-wrapper:hover .dropdownIcon .cardDetails {

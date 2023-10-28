@@ -15,7 +15,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* overflow-x: hidden; */
-  overflow: hidden;
+  overflow-x: hidden;
   width: 100%;
 }
 /* .layout_main_container {
@@ -26,12 +26,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-.react-multi-carousel-list {
+/* .react-multi-carousel-list {
   overflow: visible !important;
-}
+} */
+/* .react-multi-carousel-item {
+  min-width: 402px;
+} */
 .react-multi-carousel-item:hover {
   z-index: 1000 !important;
+  min-width: 198px;
 }
 .react-multi-carousel-track {
   gap: 25px;
+  overflow-x: hidden;
+}
+.react-multiple-carousel__arrow::before {
+  z-index: 0 !important;
+}
+.react-multiple-carousel__arrow {
+  z-index: 0 !important;
 }
