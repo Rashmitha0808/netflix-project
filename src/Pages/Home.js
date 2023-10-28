@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../css/HomeScreen.css";
 import requests from "../API/Request";
 import Row from "../Components/Row";

@@ -68,13 +68,15 @@ const Video = () => {
       setMute(videoElement.muted);
     }
   };
-  const handleForward = () => {
+  const handleForward = (e) => {
+    e.stopPropagation();
     const videoElement = videoRef.current;
     if (videoElement) {
       videoElement.currentTime += 10;
     }
   };
-  const handlePrev = () => {
+  const handlePrev = (e) => {
+    e.stopPropagation();
     const videoElement = videoRef.current;
     if (videoElement) {
       if (videoElement) {

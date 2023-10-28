@@ -125,6 +125,7 @@ function Card({
             cast={cast}
             director={director}
             createdAt={createdAt}
+            id={_id}
           />
         </Portal>
       )}

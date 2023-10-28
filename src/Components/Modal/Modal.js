@@ -2,6 +2,7 @@ import React from "react";
 import Card from "../Cards/Card";
 import useAPI from "../../Hooks/useAPI";
 import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Modal({
   thumbnail,
@@ -11,12 +12,17 @@ function Modal({
   keywords,
   director,
   createdAt,
+  id,
   onClose,
 }) {
+  const navigate = useNavigate();
   const { data, get } = useAPI([]);
   useEffect(() => {
     get("/ott/show");
   }, []);
+  const handlePlayVideo = () => {
+    navigate(`/video/${id}`);
+  };
   const createdAtString = createdAt;
   const createdAtDate = new Date(createdAtString);
 
@@ -30,7 +36,7 @@ function Modal({
           <img className="detailed_img" src={thumbnail} alt="detailed" />
           <div className="shadow"></div>
           <div className="detailed_btns">
-            <button className="detailed_play">
+            <button className="detailed_play" onClick={handlePlayVideo}>
               <svg
                 className="detailed_play__svg"
                 width="24"
