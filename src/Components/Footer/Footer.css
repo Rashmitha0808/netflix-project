@@ -20,7 +20,8 @@ a {
 }
 .member-footer-links {
   display: flex;
-  align-items: start;
+  /* align-items: start; */
+  align-items: flex-start;
   flex-direction: row;
   font-size: 13px;
   flex-wrap: wrap;

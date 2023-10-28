@@ -6,7 +6,8 @@
 .main_container {
   padding: 0 220px;
   width: 70%;
-  align-items: start;
+  /* align-items: start; */
+  align-items: flex-start;
   display: flex;
   justify-content: center;
   flex-direction: column;
