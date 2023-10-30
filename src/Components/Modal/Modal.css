@@ -63,7 +63,7 @@
   color: #fff;
   position: fixed;
   top: 20px;
-  height: 248vh;
+  /* height: 248vh; */
   width: 800px;
   border-radius: 8px;
   overflow: hidden;
@@ -160,6 +160,7 @@
 }
 .modal_about_header {
   padding: 0 50px;
+  padding-bottom: 20px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -173,14 +174,17 @@
   .portal {
     width: 100vw;
   }
-}
-@media screen and (max-width: 550px) {
   .detailed_body {
     padding: 5px 5px 0;
   }
+  .more_details {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 550px) {
   .detailed_page {
     width: 328px;
-    height: 100vh;
+    height: 50vh;
   }
   .detailed_btns {
     top: 250px;

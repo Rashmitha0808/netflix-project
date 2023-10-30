@@ -22,6 +22,7 @@ function Modal({
   }, []);
   const handlePlayVideo = () => {
     navigate(`/video/${id}`);
+    document.documentElement.style.overflow = "";
   };
   const createdAtString = createdAt;
   const createdAtDate = new Date(createdAtString);
