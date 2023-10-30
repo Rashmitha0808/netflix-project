@@ -164,8 +164,39 @@
   flex-direction: column;
   gap: 10px;
 }
+@media screen and (max-width: 820px) {
+  .detailed_page {
+    width: 536px;
+  }
+}
 @media screen and (max-width: 790px) {
   .portal {
     width: 100vw;
+  }
+}
+@media screen and (max-width: 550px) {
+  .detailed_body {
+    padding: 5px 5px 0;
+  }
+  .detailed_page {
+    width: 328px;
+    height: 100vh;
+  }
+  .detailed_btns {
+    top: 250px;
+    margin-left: 5px;
+  }
+  .more_like_header {
+    display: none;
+  }
+  .more_details {
+    display: none;
+  }
+  .detailed_card {
+    position: relative;
+    height: 370px;
+  }
+  .modal_about_header {
+    display: none;
   }
 }
