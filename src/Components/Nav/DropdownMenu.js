@@ -24,6 +24,7 @@ function DropdownMenu() {
             {/* Anni */}
           </li>
         </Link>
+
         <Link className="links" to="/">
           <li className="dropdown_list">
             <img
@@ -36,7 +37,7 @@ function DropdownMenu() {
           </li>
         </Link>
 
-        <Link className="links" to="/profile">
+        <Link className="links" to="/Star">
           <li className="dropdown_list">
             <svg
               width="24"
@@ -60,7 +61,7 @@ function DropdownMenu() {
           </li>
         </Link>
 
-        <Link to="/profile">
+        <Link to="/Star">
           <li className="dropdown_list">
             <svg
               id="profile-transfer"
@@ -121,7 +122,6 @@ function DropdownMenu() {
             Help centre
           </li>
         </Link>
-
         <div className="dropdown_signout dropdown_list" onClick={handleLogout}>
           Sign Out from Netflix
         </div>

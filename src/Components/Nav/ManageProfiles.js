@@ -2,19 +2,6 @@ import React, { useState } from "react";
 import "../Nav/Manage.css";
 
 const ManageProfiles = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [phone, setPhone] = useState("");
-
-  const handleEditEmail = (e) => {
-    setEmail(e.target.value);
-  };
-  const handleEditPassword = (e) => {
-    setPassword(e.target.value);
-  };
-  const handleEditPhone = (e) => {
-    setPhone(e.target.value);
-  };
   return (
     <div className="profile_container">
       <div className="main_container">
@@ -26,23 +13,7 @@ const ManageProfiles = () => {
           <div className="profile_details">
             <p>rashmikulal831@gmail.com</p>
             <p>Password: *********</p>
-            <p>Phone: 990909099090</p>
-          </div>
-          <div className="edit_section">
-            <p className="edit">Change email</p>
-            <p className="edit">Change password</p>
-            <p className="edit">Change phone number</p>
-          </div>
-          <div className="edit_save">
-            <button onClick={handleEditEmail} className="save">
-              Save Email
-            </button>
-            <button onClick={handleEditPassword} className="save">
-              Save Password
-            </button>
-            <button onClick={handleEditPhone} className="save">
-              Save
-            </button>
+            <p>Phone: 9909090909</p>
           </div>
         </div>
 
